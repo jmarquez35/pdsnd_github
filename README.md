@@ -1,15 +1,16 @@
 ### Date created
-Include the date you created this project and README file.
+1/6/2020
 
 ### Project Title
-Replace the Project Title
+Bikeshare Update
 
 ### Description
-Describe what your project is about and what it does
+Work in progress in completing rubric requirement
 
 ### Files used
-Include the files used
+bikeshare.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Udacity
+Github resources
+Sergio Martinez
