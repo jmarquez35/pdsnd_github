@@ -224,13 +224,35 @@ def user_stats_birth(df):
     earliest_year = birth_year.min()
     print("The most earliest birth year:", earliest_year)
 
+# Raw function
+def raw_data(df):
+    """Displays raw data by printing the first 5 lines and continue to print 5 lines more at each time the user opts to see more data"""
 
+    i = 0
+    j = 5
+
+    while True:
+
+        print("Below is five rows of raw data:")
+
+        df.reset_index()
+
+        print(df.iloc[i:j].copy())
+
+        i =i+ 5
+
+        j =j+ 5
+
+        answer = input('\nWould you like to explore next five rows of data? Enter yes or no.\n').lower()
+        if answer != 'yes':
+            break
 
 def main():
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
 
+        raw_data(df)
         time_stats(df)
         station_stats(df)
         trip_duration_stats(df)
